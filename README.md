@@ -187,6 +187,26 @@ A PCA coordinate table is generated and exported as:
 PCA.csv
 ```
 
+### 3D PCA Plotting
+
+Python script is designed to process data derived from a Principal Component Analysis (PCA) stored in a CSV file and visualize it using a 3D scatter plot.
+
+- Library Imports
+  - import pandas as pd
+  - import matplotlib.pyplot as plt
+  - from mpl_toolkits.mplot3d import Axes3D
+  
+- Data Loading and setup
+  - df = pd.read_csv('PCA.csv')
+
+```bash
+python plot_PCA_3D.py
+```
+
+Displaying the Plot
+
+- plt.show(): Executes the final command to render and display the generated 3D plot
+
 ## 🌳 Phylogenetic Tree Construction (VCF → FASTA → MEGA)
 
 This project also includes a workflow for converting VCF files to FASTA format, which can then be imported into MEGA (Molecular Evolutionary Genetics Analysis) software for phylogenetic tree construction.
